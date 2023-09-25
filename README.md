@@ -53,4 +53,7 @@ if successful, you'll get a JSON response like this:
 }
 ```
 
+### Terraform Basics
+
+[See my article here :smile:](https://www.freecodecamp.org/news/terraform-certified-associate-003-study-notes/) 
 
