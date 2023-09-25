@@ -16,5 +16,12 @@ The general format:
 ### Considerations with the Terraform CLI changes
 gpg keyring changes have altered the TF install process. 
 
+### Refactoring into bash 
+- While fixing Terraform CLI - placed commands into a bash script to install the CLI
+- This will keep the .gitpod.yml file clean
+
+
+
+
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
