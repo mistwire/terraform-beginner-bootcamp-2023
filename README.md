@@ -36,3 +36,21 @@ HELLO='world'
 
 [Set vs Export](https://www.baeldung.com/linux/bash-set-and-export#:~:text=4.2.&text=This%20showcases%20that%20set%20doesn,within%20the%20current%20shell%20session.)
 
+### AWS CLI Install
+
+AWS CLI is installed via this [bash script](./bin/install_aws_cli.sh)
+
+[AWS CLI env vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) 
+
+run `aws sts get-caller-identity`
+
+if successful, you'll get a JSON response like this:
+```json
+{
+    "UserId": "AIDFGHBUQAARDDFGH5NU",
+    "Account": "123412341234",
+    "Arn": "arn:aws:iam::123412341234:user/terraform-beginner-bootcamp"
+}
+```
+
+
