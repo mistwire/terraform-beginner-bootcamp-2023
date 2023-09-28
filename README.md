@@ -1,5 +1,15 @@
 # Terraform Beginner Bootcamp 2023
 
+## Table of Contents
+
+- [Week 0](#week-0)
+-  [Semantic Versioning](#semantic-versioning)
+- [Install the Terraform CLI](#install-the-terraform-cli)
+- [Week 1](#week-1)
+- [Week 2](#week-2)
+
+
+# Week 0
 ## Semantic Versioning
 
 Given a version number **MAJOR.MINOR.PATCH**, increment the:
@@ -57,3 +67,7 @@ if successful, you'll get a JSON response like this:
 
 [See my article here :smile:](https://www.freecodecamp.org/news/terraform-certified-associate-003-study-notes/) 
 
+# Week 1
+
+
+# Week 2
