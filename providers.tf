@@ -1,7 +1,6 @@
 terraform {
-#   cloud {
+#   backend "remote" {
 #     organization = "Mistwire"
-
 #     workspaces {
 #       name = "terra-house-1"
 #     }
