@@ -3,6 +3,7 @@ tasks:
     before: |
       source ./bin/install_terraform_cli.sh
       source ./bin/set_tf_alias.sh
+      source ./bin/generate_tfrc_credentials
 
   - name: aws-cli
     env:
@@ -15,3 +16,5 @@ vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
     - hashicorp.terraform
+
+
