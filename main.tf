@@ -8,10 +8,10 @@ terraform {
   #  }
   #}
   cloud {
-   organization = "mistwire"
-   workspaces {
-     name = "terraform-cloud"
-   }
+    organization = "mistwire"
+    workspaces {
+      name = "terraform-cloud"
+    }
   }
 
 }
