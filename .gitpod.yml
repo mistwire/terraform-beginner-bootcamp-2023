@@ -1,13 +1,14 @@
 tasks:
   - name: terraform
-      env:
+    env:
       TF_LOG: DEBUG
     before: |
       cd $PROJECT_ROOT
-      source ./bin/install_terraform_cli.sh
-      source ./bin/set_tf_alias.sh
+      source ./bin/set_tf_alias
+      source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
       cp $PROJECT_ROOT/terraform.tfvars.example $PROJECT_ROOT/terraform.tfvars
+
   - name: sinatra
     before: | 
       cd $PROJECT_ROOT
@@ -19,19 +20,16 @@ tasks:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
       cd $PROJECT_ROOT
-      source ./bin/install_aws_cli.sh
       source ./bin/set_tf_alias.sh
-  
+      source ./bin/install_aws_cli.sh
   - name: http-server
     before: |
       cd $PROJECT_ROOT
       npm install --global http-server
-    command:
+    command: 
       http-server
 
 vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
     - hashicorp.terraform
-
-
